@@ -93,7 +93,8 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: 'Roboto', sans-serif;
+  /* font-family: var(--bs-body-font-family); */
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -11734,7 +11735,6 @@ html {
 }
 
 
-
 #toggleBtn:after  {
     content: 'Read More';
 }
@@ -11765,12 +11765,21 @@ section {
 
 .container-card {
   position: relative;
+  
 }
 .fixed-info {
     position: absolute;
-    right: -33px;
+    right: -53px;
     top: 15px;
+    display: inline-block;
+    transition: transform 0.10s ease;
 }
 .info-content {
-  width: 20px;
+ width: 120px;  
 }
+
+.info-content:hover {
+            background-color: #0056b3;
+            transform: translateX(50px);
+}
+
